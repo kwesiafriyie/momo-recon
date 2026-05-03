@@ -6,7 +6,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/yourorg/momo-recon/internal/service"
+	"github.com/kwesiafriyie/momo-recon/internal/service"
 )
 
 type MoMoHandler struct {

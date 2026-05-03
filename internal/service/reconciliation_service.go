@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/yourorg/momo-recon/internal/model"
-	"github.com/yourorg/momo-recon/internal/repository"
+	"github.com/kwesiafriyie/momo-recon/internal/model"
+	"github.com/kwesiafriyie/momo-recon/internal/repository"
 )
 
 type ReconciliationService struct {

@@ -7,9 +7,9 @@ import (
 	"time"
 
 	"github.com/google/uuid"
-	"github.com/yourorg/momo-recon/internal/model"
-	"github.com/yourorg/momo-recon/internal/repository"
-	"github.com/yourorg/momo-recon/internal/service"
+	"github.com/kwesiafriyie/momo-recon/internal/model"
+	"github.com/kwesiafriyie/momo-recon/internal/repository"
+	"github.com/kwesiafriyie/momo-recon/internal/service"
 )
 
 // callbackPayload is the shape MoMo sends to our webhook.
