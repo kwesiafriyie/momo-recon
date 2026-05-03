@@ -1,0 +1,22 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: momo_recon_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: momo
+      POSTGRES_PASSWORD: momo_secret
+      POSTGRES_DB: momo_recon
+    ports:
+      - "5432:5432"
+    volumes:
+      - momo_pgdata:/var/lib/postgresql/data
+      - ./migrations/001_create_tables.sql:/docker-entrypoint-initdb.d/001_create_tables.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U momo -d momo_recon"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  momo_pgdata:
